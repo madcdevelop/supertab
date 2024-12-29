@@ -947,8 +947,8 @@ endfunction " }}}
 
   inoremap <silent> <c-x> <c-r>=<SID>ManualCompletionEnter()<cr>
 
-  imap <script> <Plug>SuperTabForward <c-r>=SuperTab('n')<cr>
-  imap <script> <Plug>SuperTabBackward <c-r>=SuperTab('p')<cr>
+  imap <script> <silent> <Plug>SuperTabForward <c-r>=SuperTab('n')<cr>
+  imap <script> <silent> <Plug>SuperTabBackward <c-r>=SuperTab('p')<cr>
 
   let s:has_dict_maparg = v:version > 703 || (v:version == 703 && has('patch32'))
 
